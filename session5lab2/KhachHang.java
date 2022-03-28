@@ -10,7 +10,7 @@ public class KhachHang {
     double[] dinhmucgia = {1000,1200,1500,2000};
 
     public KhachHang(){
-        System.out.println("\nThông tin hóa đơn");
+        System.out.println("\nThông tin hóa đơn tháng 1/2019");
     }
 
     public String getId() {

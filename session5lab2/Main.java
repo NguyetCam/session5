@@ -21,7 +21,7 @@ public class Main {
         khvn2.hienThi();
 
         KhachHangNuocNgoai khnn1 = new KhachHangNuocNgoai("D03","Leonardo da Vinci");
-        khnn1.setDate("1/2019");
+        khnn1.setDate("2/2019");
         khnn1.setQuoctich("Italian");
         khnn1.setSoluong(230);
         khnn1.tinhTien();
@@ -35,7 +35,7 @@ public class Main {
         khnn2.hienThi();
 
         KhachHangNuocNgoai khnn3 = new KhachHangNuocNgoai("D05","Triệu Lộ Tư");
-        khnn3.setDate("1/2019");
+        khnn3.setDate("2/2019");
         khnn3.setQuoctich("Chinese");
         khnn3.setSoluong(186);
         khnn3.tinhTien();
@@ -47,5 +47,14 @@ public class Main {
         dsknn1.themKHNN(khnn3.getThanhTien());
         dsknn1.trungBinh();
         System.out.format("Tiền điện trung bình của người nước ngoài: %.3f", dsknn1.trungbinh);
+
+        DSKH dskh12019 = new DSKH();
+        dskh12019.setDate("1/2019");
+        dskh12019.themKH(khvn1.date,khvn1.id,khvn1.name,khvn1.doituong,khvn1.soluong,khvn1.thanhTien);
+        dskh12019.themKH(khvn2.date,khvn2.id,khvn2.name,khvn2.doituong,khvn2.soluong,khvn2.thanhTien);
+        dskh12019.themKH(khnn1.date,khnn1.id,khnn1.name,khnn1.quoctich,khnn1.soluong,khnn1.thanhTien);
+        dskh12019.themKH(khnn2.date,khnn2.id,khnn2.name,khnn2.quoctich,khnn2.soluong,khnn2.thanhTien);
+        dskh12019.themKH(khnn3.date,khnn3.id,khnn3.name,khnn3.quoctich,khnn3.soluong,khnn3.thanhTien);
+        dskh12019.hienThi();
     }
 }
