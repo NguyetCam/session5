@@ -1,6 +1,6 @@
 package session5lab2;
 
-public class KhachHangNuocNgoai extends KhachHang{
+public class KhachHangNuocNgoai extends KhachHang {
     String quoctich;
 
     public KhachHangNuocNgoai(String id,String name){

@@ -41,22 +41,18 @@ public class Main {
         khnn3.tinhTien();
         khnn3.hienThi();
 
-        DSKNN dsknn1 = new DSKNN();
-        dsknn1.themKHNN(khnn1.getThanhTien());
-        dsknn1.themKHNN(khnn2.getThanhTien());
-        dsknn1.themKHNN(khnn3.getThanhTien());
-        dsknn1.trungBinh();
-        System.out.format("\nTiền điện trung bình của người nước ngoài: %.3f\n", dsknn1.trungbinh);
-
         DSKH dskh12019 = new DSKH();
         dskh12019.themKH(khvn1.date,khvn1.id,khvn1.name,khvn1.doituong,khvn1.soluong,khvn1.thanhTien);
         dskh12019.themKH(khvn2.date,khvn2.id,khvn2.name,khvn2.doituong,khvn2.soluong,khvn2.thanhTien);
         dskh12019.themKH(khnn1.date,khnn1.id,khnn1.name,khnn1.quoctich,khnn1.soluong,khnn1.thanhTien);
         dskh12019.themKH(khnn2.date,khnn2.id,khnn2.name,khnn2.quoctich,khnn2.soluong,khnn2.thanhTien);
         dskh12019.themKH(khnn3.date,khnn3.id,khnn3.name,khnn3.quoctich,khnn3.soluong,khnn3.thanhTien);
-//        dskh12019.setDate("1/2019");
         dskh12019.hienThi("1/2019");
-//        dskh12019.setDate("2/2019");
         dskh12019.hienThi("2/2019");
+        dskh12019.tongSoLuong();
+        dskh12019.trungBinhNN();
+        System.out.println("Tổng số lượng của khách Việt Nam: " + dskh12019.tongVN);
+        System.out.println("Tổng số lượng của khách nước ngoài: " + dskh12019.tongNN);
+        System.out.format("Tiền điện trung bình của người nước ngoài: %.3f", dskh12019.trungbinh);
     }
 }
